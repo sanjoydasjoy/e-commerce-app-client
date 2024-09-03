@@ -18,3 +18,15 @@ Ensure you have the following installed on your machine:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+
+3. **Running the App:**
+
+   ```bash
+   npm run dev
+
+
