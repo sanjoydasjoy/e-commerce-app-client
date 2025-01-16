@@ -83,7 +83,10 @@ const Collection = () => {
 
     useEffect(() => {
         applyFilter()
-    }, [catagory, subCatagory, search, showSearch])
+    }, [catagory, subCatagory, search, showSearch, products])
+
+    // adding this }, [products]) is because when the function is executed productes will be updated
+
 
     // useEffect(() => {
     //    console.log(catagory);
