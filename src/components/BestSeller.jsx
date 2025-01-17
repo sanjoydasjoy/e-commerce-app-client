@@ -10,7 +10,9 @@ const BestSeller = () => {
     useEffect(() => {
         const bestProduct = products.filter((item) => (item.bestseller))
         setBestSelller(bestProduct.slice(0, 5))
-    }, [])
+    }, [products])
+
+    // adding this }, [products]) is because when the function is executed productes will be updated
     return (
         <div className='my-10'>
             <div className='text-center text-3xl py-8'>
