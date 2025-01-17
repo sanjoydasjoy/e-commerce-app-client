@@ -10,7 +10,10 @@ const LatestCollection = () => {
 
     useEffect(() => {
         setLatestProducts(products.slice(0, 10))
-    }, [])
+    }, [products])
+
+    // adding this }, [products]) is because when the function is executed productes will be updated
+
 
     return (
         <div className='my-10'>
